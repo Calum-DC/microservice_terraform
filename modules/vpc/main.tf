@@ -20,6 +20,7 @@ module "vpc" {
   intra_subnet_tags = {
     Network = "internal"
   }
+  
 }
 
 module "security_group_internal" {
