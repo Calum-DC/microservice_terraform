@@ -19,3 +19,35 @@ output "intra_subnet" {
   value       = module.vpc.intra_subnet_ids
 }
 
+
+# SQS Outputs
+
+output "queue_1_name" {
+  description = "Queue 1 Name Output"
+  value = module.sqs.queue_1_name
+}
+
+output "queue_2_name" {
+  description = "Queue 2 Name Output"
+  value = module.sqs.queue_2_name
+}
+
+output "queue_3_name" {
+  description = "Queue 3 Name Output"
+  value = module.sqs.queue_3_name
+}
+
+output "queue_1_url" {
+  description = "Queue 1 Name Output"
+  value = module.sqs.queue_1_url
+}
+
+output "queue_2_url" {
+  description = "Queue 2 Name Output"
+  value = module.sqs.queue_2_url
+}
+
+output "queue_3_url" {
+  description = "Queue 3 Name Output"
+  value = module.sqs.queue_3_url
+}

@@ -19,17 +19,17 @@ variable "visibility_timeout" {
 variable "priority_1_queue_name" {
   description = "Name for the priority 1 SQS queue"
   type = string
-  default = "priority-1-queue"
+  default = "cal-priority-1-queue"
 }
 
 variable "priority_2_queue_name" {
   description = "Name for the priority 2 SQS queue"
   type = string
-  default = "priority-2-queue"
+  default = "cal-priority-2-queue"
 }
 
 variable "priority_3_queue_name" {
   description = "Name for the priority 3 SQS queue"
   type = string
-  default = "priority-3-queue"
+  default = "cal-priority-3-queue"
 }

@@ -1,12 +1,12 @@
 variable "vpc_name" {
   description = "Name for the VPC"
-  default     = "microservice-vpc"
+  default     = "cal-microservice-vpc"
 }
 
 variable "azs" {
   description = "Availability Zones"
   type = list(string)
-  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  default = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
 }
 
 variable "vpc_cidr" {
@@ -31,4 +31,10 @@ variable "intra_subnets" {
   description = "Intra-subnet"
   type = list(string)
   default = ["10.0.201.0/24", "10.0.202.0/24", "10.0.203.0/24"]
+}
+
+variable "vpc_id" {
+  description = "The ID of the VPC"
+  type        = string
+  default = ""
 }
